@@ -22,6 +22,8 @@ class Core
             $Config['Database']['Password'],
             $Config['Database']['Database']
         );
+        echo '2hi <3';
+
     }
 
     /**
@@ -29,6 +31,7 @@ class Core
      * @return Core
      */
     public static function getInstance(){
+        echo '3hi <3';
 
         if(empty(self::$instance)){
             self::$instance = new Core();
@@ -45,6 +48,8 @@ class Core
 
     public function getDB()
     {
+        echo '4hi <3';
+
         return self::$db;
     }
 
@@ -55,6 +60,7 @@ class Core
      */
     # будет инициализировать всю систему
     public function init(){
+        echo '5hi <3';
 
         session_start();
 
