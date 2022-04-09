@@ -33,6 +33,8 @@ class Core
     public static function getInstance(){
 
         if(empty(self::$instance)){
+            echo '3hi <3';
+
             self::$instance = new Core();
             echo '3hi <3';
 
