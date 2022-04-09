@@ -22,4 +22,5 @@ $core -> init();
 $core -> run();
 $core -> done();
 
+echo 'hi <3'
 ?>
