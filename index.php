@@ -18,6 +18,8 @@ include('Config/config.php');
 include('Core/Core.php');
 
 $core = \Core\Core::getInstance();
+echo 'hi <3';
+
 $core -> init();
 echo 'hi <3';
 
