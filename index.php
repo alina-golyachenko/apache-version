@@ -21,7 +21,6 @@ $core = \Core\Core::getInstance();
 echo 'hi <3';
 
 $core -> init();
-echo 'hi <3';
 
 //$core -> run();
 //echo 'hi <3';

@@ -22,8 +22,6 @@ class Core
             $Config['Database']['Password'],
             $Config['Database']['Database']
         );
-        echo 'hi <3';
-
     }
 
     /**
@@ -31,7 +29,6 @@ class Core
      * @return Core
      */
     public static function getInstance(){
-        echo 'hi <3';
 
         if(empty(self::$instance)){
             self::$instance = new Core();
@@ -40,7 +37,6 @@ class Core
         else{
             return self::$instance;
         }
-
     }
 
     /**
@@ -49,8 +45,6 @@ class Core
 
     public function getDB()
     {
-        echo 'hi <3';
-
         return self::$db;
     }
 
