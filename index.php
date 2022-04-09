@@ -19,8 +19,13 @@ include('Core/Core.php');
 
 $core = \Core\Core::getInstance();
 $core -> init();
-$core -> run();
-$core -> done();
+echo 'hi <3';
 
-echo 'hi <3'
+$core -> run();
+echo 'hi <3';
+
+$core -> done();
+echo 'hi <3';
+
+
 ?>
