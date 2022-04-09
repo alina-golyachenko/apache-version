@@ -22,7 +22,6 @@ class Core
             $Config['Database']['Password'],
             $Config['Database']['Database']
         );
-        echo '2hi <3';
 
     }
 
@@ -83,6 +82,8 @@ class Core
         if(is_file($fileName)){
             include($fileName);
         }
+        echo '2hi <3';
+
     }
 //
 //    /**
