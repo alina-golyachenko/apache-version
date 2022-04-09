@@ -21,11 +21,11 @@ $core = \Core\Core::getInstance();
 $core -> init();
 echo 'hi <3';
 
-$core -> run();
-echo 'hi <3';
-
-$core -> done();
-echo 'hi <3';
+//$core -> run();
+//echo 'hi <3';
+//
+//$core -> done();
+//echo 'hi <3';
 
 
 ?>
