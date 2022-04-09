@@ -31,13 +31,16 @@ class Core
      * @return Core
      */
     public static function getInstance(){
-        echo '3hi <3';
 
         if(empty(self::$instance)){
             self::$instance = new Core();
+            echo '3hi <3';
+
             return self::getInstance();
         }
         else{
+            echo '3hi <3';
+
             return self::$instance;
         }
     }
