@@ -15,7 +15,7 @@ class Core
     private static $globalError = false;
     private function __construct(){
         global $Config;
-        spl_autoload_register('Core/Core::__autoload');
+        spl_autoload_register('Core\Core::__autoload');
         self::$db = new \Core\DB(
             $Config['Database']['Server'],
             $Config['Database']['Username'],
@@ -78,12 +78,12 @@ class Core
 //     * @param $className
 //     *
 //     */
-//    public static function __autoload($className){
-//        $fileName = $className.'.php';
-//        if(is_file($fileName)){
-//            include($fileName);
-//        }
-//    }
+    public static function __autoload($className){
+        $fileName = $className.'.php';
+        if(is_file($fileName)){
+            include($fileName);
+        }
+    }
 //
 //    /**
 //     * Делает парсинг url-адреса и находит нужный контроллер

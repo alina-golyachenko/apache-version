@@ -16,7 +16,6 @@
 
 include('Config/config.php');
 include('Core/Core.php');
-echo '0hi <3';
 
 $core = \Core\Core::getInstance();
 echo '1hi <3';
