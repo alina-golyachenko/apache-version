@@ -15,7 +15,7 @@ class Core
     private static $globalError = false;
     private function __construct(){
         global $Config;
-        spl_autoload_register('Core/Core::__autoload');
+        spl_autoload_register('Core\Core::__autoload');
         self::$db = new \Core\DB(
             $Config['Database']['Server'],
             $Config['Database']['Username'],
